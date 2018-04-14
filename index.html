@@ -1,49 +1,181 @@
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-<style>
-  body {
-  background-color: black;
-}
-  .yellow-text {
-    color: yellow;
-  }
-  h1{
-    font-family: Lobster ;
-  }
-  p {
-    font-size: 16px;
-    font-family: Monospace;
-  }
-   .smaller-size {
-    width=500px;
-  }
-</style>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zhen-Wei's page</title>
+		<marquee  height="20" behavior=alternate bgcolor=#ff9d6f >~Welcome to My Website~</marquee>
+    <script language="javascript"  class="welcomeword">var Today=new Date();document.write(  "Today is "+Today.getFullYear()+ "." + (Today.getMonth()+1) + "." + Today.getDate() );
+    </script>
+   <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+   <script src="js/winternetizer.min.js" type="text/javascript"></script>
+   <script type="text/javascript" src="snow.js"></script>
+   <script type="text/javascript" src="jquery.js"></script>  
+   <script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-34582.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<div style="text-align:center>
-<h1 class="yellow-text">NBA</h1>
+   <script src="http://www.schillmania.com/projects/snowstorm/snowstorm-min.js" type="text/  javascript"></script>
+    
+	</head>
+	<body background="http://scimg.dameigong.cn/b/20160911/20160911204720_43729.jpg" bgproperties=fixed>
+    <audio src="Mayday.ogg" autoplay="autoplay" loop="loop">
+       Your browser does not support the audio element.
+    </audio>
 
-<p class="yellow-text"> My Favorite Team ¢w Los Angeles Lakers</p>
-<a href = "http://www.nba.com/lakers/" > <img class="smaller-size" src="https://www.latfusa.com/media/uploads/2017/08/14/lakers-logo-2.jpg" alt="Los Angeles Lakers"></a>
-</div>
-<ul>
-  <li>Conference¡GWestern</li>
-  <li>Division¡GPacific</li>
-  <li>Founded¡G1947</li>
-  <li>History¡GMinneapolis Lakers(1947¡V1960)¡÷Los Angeles Lakers(1960¡Vpresent)</li>
-  <li>Main sponsor¡GWish</li>
-  <li>Head coach¡GLuke Walton</li>
-  <li>Championships¡G16</li>
-</ul>
+    <script>
+      $(document).ready(function() {
+        $("#div1").hide();
+      
+        $("h2").hide();
+        $(".smaller-image").hide();
+        $(".smaller-image").hide();
+        $(".thanks").hide();
+       
+        $("h2").click(function(){
+            $("#div1").fadeOut();
+            $("h2").fadeOut();
+            $(".smaller-image").fadeOut();
+            $(".smaller-image2").fadeOut();
+            $(".thanks").fadeOut();
+            $("h2") .css("color","skyblue")
+            $("h3") .css("color","red")
+            $("h3").animate({
+               left:'550px',
+             });
+            $("h3").fadeIn();
+        });
+         $("h3").click(function(){
+            $("#div1").fadeIn();
+            $(".profile").fadeIn();
+            $("h2").fadeIn();
+            $("#div1").fadeIn();
+            $(".smaller-image").fadeIn();
+            $(".smaller-image2").fadeIn();
+            $(".thanks").fadeIn();
+            $("h2") .css("color","red")
+            $("h3") .css("color","skyblue")
+            $("h3").animate({
+               left:'350px',
+             });
+            $("h3").fadeOut();
+        });
+      });
+    </script>
 
-<p class="yellow-text"> My Favorite Player ¢w Allen Iverson</p>
-<a href = "https://www.youtube.com/watch?v=13YeR5zIGbo" > <img src="https://pic.pimg.tw/derekhsu/4b168f3846be1.jpg?v=1259769656" alt="Allen Iverson"></a>
-<p2>Born¡GJune 7,1975</p2>
-<p2>Nationality¡GAmerican</p2>
-<p2>Listed height¡G6 ft 0 in (1.83 m)</p2>
-<p2>Listed weight¡G165 lb (75 kg)</p2>
-<p2>NBA draft¡G	1996 / Round: 1 / Pick: 1st overall Selected by the Philadelphia 76ers</p2>
-<p2>Playing career¡G1996¡V2011</p2>
-<p2>Position¡GPG/SG</p2>
-<p2>***Basketball Hall of Fame as player***</p2>
+		<style>
+  			.red-text {
+    			color: red;
+    			font-size: 100px;
+          position:absolute;
+          top:110px;
+          left:550px;
+  			}
+  			h2 {
+    			font-family: Harrington, MonospaceS;
+  			}
+        h3 {
+          font-family: Harrington, MonospaceS;
+        }
+  		
+  			.thick-pink-border {
+    			border-color: pink;
+    			border-width: 8px;
+    			border-style: solid;
+    			border-radius: 50%;
+  			}
+  			.smaller-image {
+    			position: relative;
+    			top:980px;
+    			left:-600px;
+  			}
+  			.smaller-image2 {
+          position: relative;
+          top:975px;
+          left:-600px;
+        }
+        .thanks {
+          position: relative;
+          top:980px;
+          left:-600px;
+        }
+        .welcome {
+          position: fixed;
+          top:550px;
+          left:1100px;
+        }
+        .welcomeword {
+          font-size: 14px;
+          color: #FF7744;
+          position: fixed;
+          top:730px;
+          left:1220px;
+        }
+        .title {
+          font-family: Calibri , Monospace;   
+          color:  #272727;
+          position: relative;
+          font-size: 28px;
+          top:100px;
+          left:550px;
+        }
+        .word {
+          position: relative;
+          color:  #4f4f4f;
+          font-size: 20px;
+          top:100px;
+          left:650px;
+        }
+  			.profile {
+    			color: pink;
+    			font-size:72px;
+    			font-family: monospace;
+    			position: relative;
+    			top:175px;
+    			left:-300px;
+    			width: 300px;
+   			}
+        .image{
+          width:50px;
+          height:50px;
+        }
+		</style>
 
-<p class="yellow-text">406570027 ¤ýÂE¾±</p>
+		<center style="background-color: #fff2f2;border-bottom:20px pink solid;">
 
+    <div>
+		<h2 class="red-text" >My Profile</h2>
+    <h3 class="red-text" >Open</h2>
+    <div id="contact">
+		<a ><img class="thick-pink-border profile" src="	https://scontent.ftpe8-3.fna.fbcdn.net/v/t1.0-9/21728138_1362925513829509_4517823123429893106_n.jpg?oh=bad4d96f8c237087d8b679ca7f12a2db&oe=5B373F30" ></a>
+    <a ><img class="thanks" src=https://1.bp.blogspot.com/-CEYqAlrawPE/WNMqGVjIrGI/AAAAAAAGjXM/se795jQ7DrcyzZjP_gJJl6-KzNCMMe3nACLcB/s1600/AS002455_03.gif?time=Fri%20Mar%2016%202018%2018:42:46%20GMT+0800%20(%E5%8F%B0%E5%8C%97%E6%A8%99%E6%BA%96%E6%99%82%E9%96%93) width="120" height="120"  ></a>
+		<a href="https://www.facebook.com/profile.php?id=100003362207267&ref=bookmarks" ><img class="smaller-image" src="	http://subversemagazine.com/wp-content/uploads/2016/03/facebook-2.png" width="60" height="60" alt="facebook"></a>
+		<a href="https://www.instagram.com/chenwei39/"><img  class="smaller-image" src="	https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_black-512.png"  width="60" height="60" alt="instagram" ></a>
+		<a href="https://github.com/ZhenWei-Qiu"><img class="smaller-image2"  src="	https://www.shareicon.net/data/128x128/2015/09/02/94536_mark_512x512.png"   width="50" height="50"  alt="github"></a>
+	  <a href="#"><img class="welcome" src=https://pic.pimg.tw/frances6688/1442571786-3494931783.gif ></a>
+    </center>
+
+    <p  class="welcomeword">TOP</p>
+   
+    <div id="div1">
+  
+           <p class= "title">Name:</p>
+           <p class= "word"> <font face="¼Ð·¢Åé">ªô­sÞ³ </font> Qiu Zhen-Wei</p>
+           <p class= "title">Birthday:</p>
+           <p class= "word">1998.03.09</p>
+           <p class= "title">Contact:</p>
+           <p class= "word">a3kk0025@gmail.com</p>
+           
+           <p class= "title">Interest:</p>
+           <ul class= "word"">
+              <p><li>Singing</li></p>
+              <p"><li>Ukulele</li></p>
+              <p ><li>Shopping</li></p>
+           
+           </ul>
+           <p class= "title">Education:</p>
+           <p class= "word">Fu Jen Catholic University major in CSIE</p>
+      
+           
+   </div>
+
+	</body>
+
+</html>
