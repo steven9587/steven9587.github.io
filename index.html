@@ -1,22 +1,38 @@
 ﻿<!DOCTYPE html>
  <html>
+
+
   <head>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> 
-    
-    
-      <script src="/jquery/jquery-1.11.1.min.js"></script>
-<script type="text/javascript">
-       $(document).ready(function(){
-         $("#context").hide();
-
-       $("#open").click(function(){
-         $("#context").show();
-       }); 
-     });
-</script>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
+
+  <script>
+      $(document).ready(function(){
+        $("#context").hide();
+        $("#button2").hide();
+       });
+
+     $("#button1").click(function(){
+        $("#context").show();
+        $("#button2").show();
+        $("#beginning").hide();
+        $("#button1").hide();
+       });
+
+     $("#button2").click(function(){
+        $("#beginning").show();
+        $("#button1").show();
+        $("#context").hide();
+        $("#button2").hide();
+       });
+  </script>
+
+
+
+
+
+
 
   <body>
 
@@ -58,6 +74,11 @@
 
     <marquee  height="25" behavior=scroll  class="yellow-text">~歡迎來到我的網頁~</marquee>
    
+      
+
+
+
+
       <div class="white-text" id="beginning">
        <h1 class="center">自我介紹</h1>
        <p>
@@ -74,9 +95,15 @@
        </big></p>
       </p>
     </div>
-    <div class="center">
+
+
+
+    <div id="button1" class="center">
     <button id ="open">更了解我</button>
     </div>
+
+
+
 
    <div style="display:none" id="context">
     <h1 class="yellow-text center">NBA</h1>
@@ -107,6 +134,16 @@
      <p>***Basketball Hall of Fame as player***</p>
     </div>
    </div>
+
+
+
+   <div id="button2">
+    <div class="center">
+    <button id ="close">基本資料</button>
+    </div>
+
+
+
 
    <div class="right white-text" >
    <p>醫資一406570027 王鴻勳</p>
