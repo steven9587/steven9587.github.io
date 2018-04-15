@@ -9,6 +9,7 @@
       <script src="/jquery/jquery-1.11.1.min.js"></script>
 <script type="text/javascript">
        $(document).ready(function(){
+
          $("#context").hide();
          $("#button2").hide();
 
@@ -18,7 +19,18 @@
          $("#beginning").hide();
          $("#button1").hide();
        }); 
+
+       $("#close").click(function(){
+         $("#beginning").show();
+         $("#button1").show();
+         $("#context").hide();
+         $("#button2").hide();
+       });
+
+
      });
+
+       
 </script>
 
 
@@ -139,7 +151,7 @@
     <div class="center">
     <button id ="close"><big><big><strong>基本資料</strong></big></big></button>
     </div>
-
+   </div>
 
 
 
